@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+  <div class="container">
+    <h1>TODO LIST</h1>
+    <form action="/" method="post">
+      <input type="text" placeholder="Add Task" name="todotask">
+      <button class="button-9" value="submit">ADD</button>
+    </form>
+    <br>
+    <br>
+    <br>
+      <% if(locals.data){ %>
+        <form action="/delete" method="post">
+        <% for( let index = 0; index < data.length; index++ ) { %>
+         <input type="checkbox" id="<%=index%>"  class="fresh" name="checkbox" value="<%=data[index]._id%>" onchange="this.form.submit()">
+         <label for="<%=data[index].todo%>" class="tasklist"><%=data[index].todo%></label><br><br>
+        <% } %>
+        <%}%>
+      </form>
+        
+  </div>
+</body>
+</html>

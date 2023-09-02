@@ -1,0 +1,55 @@
+*{
+  padding:0;
+  margin: 0;
+}
+body{
+  background: lightgreen;
+}
+.task{
+  font-style: normal;
+  color: brown;
+}
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h1{
+  color:darkolivegreen;
+  padding: 4rem;
+  font-size:3 rem;
+  text-decoration: underline;
+  
+}
+input{
+  min-width:700 px;
+  height:2rem;
+  border-radius: 12px 0 12px 0;
+  border: solid 2px violet;
+  padding-left: 2rem;
+  color: violet;
+  font-size: 1.5rem;
+  outline: none;
+}
+::placeholder{
+  color: blueviolet;
+}
+
+/* CSS */
+button{
+  width: 200px;
+  height: 2.5rem;
+  background: lightsalmon;
+  border-radius: 8px;
+}
+.tasklist{
+  font-size: 28px;
+  color: brown;
+
+}
+.fresh{
+  width: 20px;
+  height: 20px;
+}
